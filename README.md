@@ -1,5 +1,8 @@
 # FakeUser Blocklist
 
+This filter is designed to block content such as comments and posts created for
+illegal activities, adult content, spam, and viral marketing purposes.
+
 ## Usage
 
 ```
