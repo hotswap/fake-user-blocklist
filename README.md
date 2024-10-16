@@ -1,5 +1,7 @@
 # FakeUser Blocklist
 
+**English** | [한국어](README.ko-KR.md) | [日本語](README.ja-JP.md)
+
 This filter is designed to block content such as comments and posts created for
 illegal activities, adult content, spam, and viral marketing purposes.
 

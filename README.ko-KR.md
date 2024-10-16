@@ -1,5 +1,7 @@
 # FakeUser Blocklist
 
+[English](README.md) | **한국어** | [日本語](README.ja-JP.md)
+
 각종 불법 및 음란물, 스팸, 바이럴 마케팅 등의 용도로 작성된 댓글, 게시글 등의 콘텐츠를 차단하기 위해 작성된 필터입니다.
 
 ## 사용법
