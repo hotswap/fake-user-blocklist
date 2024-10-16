@@ -1,9 +1,9 @@
 ! Title: FakeUser Blocklist
 ! Expires: 1 hour
-! Home: https://github.com/hotswap/fake-user-blocklist
+! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202410161608
+! Version: 202410161712
 
 youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="l9%EA%B8%88"])
 youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="I9%EA%B8%88"])
