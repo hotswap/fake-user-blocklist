@@ -3,9 +3,13 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202410161717
+! Version: 202410161724
 
-youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="l9%EA%B8%88"])
-youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="I9%EA%B8%88"])
-youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="ON%ED%8C%AC"])
-youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="%ED%81%B4%EB%A6%AD"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="l9%EA%B8%88"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has([class="comment-icon-container"][href*="l9%EA%B8%88"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="I9%EA%B8%88"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has([class="comment-icon-container"][href*="I9%EA%B8%88"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="ON%ED%8C%AC"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has([class="comment-icon-container"][href*="ON%ED%8C%AC"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="%ED%81%B4%EB%A6%AD"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has([class="comment-icon-container"][href*="%ED%81%B4%EB%A6%AD"])
