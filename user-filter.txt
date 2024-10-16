@@ -1,9 +1,10 @@
 ! Title: FakeUser Blocklist
+! Description: Filter to block comments and posts used for illegal content, adult material, spam, and viral marketing
 ! Expires: 1 hour
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202410161724
+! Version: 202410161749
 
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has([id="author-text"][href*="l9%EA%B8%88"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has([class="comment-icon-container"][href*="l9%EA%B8%88"])
