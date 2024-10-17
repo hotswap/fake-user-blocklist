@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202410170530
+! Version: 202410170533
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="l9%EA%B8%88"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="l9%EA%B8%88"])
@@ -80,6 +80,16 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][h
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%A0%88%EB%8C%80%EA%B8%88%EC%A7%80"])
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%A0%88%EB%8C%80%EA%B8%88%EC%A7%80"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%A0%88%EB%8C%80%EA%B8%88%EC%A7%80"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EC%84%B8%EB%AF%B8%EB%A7%8C"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%84%B8%EB%AF%B8%EB%A7%8C"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%84%B8%EB%AF%B8%EB%A7%8C"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%84%B8%EB%AF%B8%EB%A7%8C"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EC%B6%9C%EC%9E%85%EC%A0%9C%ED%95%9C"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%B6%9C%EC%9E%85%EC%A0%9C%ED%95%9C"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%B6%9C%EC%9E%85%EC%A0%9C%ED%95%9C"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%B6%9C%EC%9E%85%EC%A0%9C%ED%95%9C"])
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(홀덤)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(홀덤))
