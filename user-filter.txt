@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202410231005
+! Version: 202410231011
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@19-"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@19-"])
@@ -160,6 +160,16 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][h
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%9E%90%EB%A3%8C%ED%86%B5"])
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%9E%90%EB%A3%8C%ED%86%B5"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%9E%90%EB%A3%8C%ED%86%B5"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EC%97%84%EB%B9%A0"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%97%84%EB%B9%A0"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%97%84%EB%B9%A0"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%97%84%EB%B9%A0"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EC%97%AC%EB%8F%8C%EC%82%AC%EA%B1%B4"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%97%AC%EB%8F%8C%EC%82%AC%EA%B1%B4"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%97%AC%EB%8F%8C%EC%82%AC%EA%B1%B4"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%97%AC%EB%8F%8C%EC%82%AC%EA%B1%B4"])
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(홀덤)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(홀덤))
