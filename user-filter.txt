@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202411151537
+! Version: 202501161930
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@19-"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@19-"])
@@ -345,3 +345,8 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(프사눌러)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(프사눌러))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(프사눌러))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(프사눌러))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(XAI31K)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(XAI31K))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(XAI31K))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(XAI31K))
