@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202501190853
+! Version: 202501220935
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@19-"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@19-"])
@@ -315,6 +315,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][h
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EB%B3%B4%EA%B4%80%EC%9A%A9"])
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EB%B3%B4%EA%B4%80%EC%9A%A9"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EB%B3%B4%EA%B4%80%EC%9A%A9"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(recovery phrase)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(recovery phrase))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(recovery phrase))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(recovery phrase))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(홀덤)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(홀덤))
