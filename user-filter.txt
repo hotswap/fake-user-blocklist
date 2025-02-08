@@ -365,3 +365,8 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(복구 문구)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(복구 문구))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(복구 문구))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(복구 문구))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(복원 구문)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(복원 구문))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(복원 구문))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(복원 구문))
