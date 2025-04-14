@@ -4,7 +4,22 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202504141137
+! Version: 202504141212
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*=".."])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*=".."])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*=".."])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*=".."])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="__"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="__"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="__"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="__"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="--"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="--"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="--"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="--"])
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@19"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@19"])
@@ -61,20 +76,10 @@ www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="OF%ED%95%9C"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="OF%ED%95%9C"])
 
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="19%EA%B8%88"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="19%EA%B8%88"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="19%EA%B8%88"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="19%EA%B8%88"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="l9%EA%B8%88"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="l9%EA%B8%88"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="l9%EA%B8%88"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="l9%EA%B8%88"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="I9%EA%B8%88"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="I9%EA%B8%88"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="I9%EA%B8%88"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="I9%EA%B8%88"])
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[1lI].*9.*금/))
+www.youtube.com#?#ytd-comment-thread-renderer:has(#comment [id="author-text"]:contains(/[1lI].*9.*금/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/[1lI].*9.*금/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/[1lI].*9.*금/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="19%EB%AA%A8%EC%9D%8C"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="19%EB%AA%A8%EC%9D%8C"])
@@ -110,6 +115,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][h
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="ON%ED%8C%AC"])
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="ON%ED%8C%AC"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="ON%ED%8C%AC"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="ON%ED%8D%A4"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="ON%ED%8D%A4"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="ON%ED%8D%A4"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="ON%ED%8D%A4"])
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EC%B1%84%EB%84%901"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%B1%84%EB%84%901"])
@@ -235,6 +245,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][h
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%95%BC%EB%8E%A1"])
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%95%BC%EB%8E%A1"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%95%BC%EB%8E%A1"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EC%B1%BC%EB%85%88"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EC%B1%BC%EB%85%88"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="%EC%B1%BC%EB%85%88"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="%EC%B1%BC%EB%85%88"])
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="%EA%B0%9C%EA%BC%B4"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="%EA%B0%9C%EA%BC%B4"])
