@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202504141212
+! Version: 202504281245
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*=".."])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*=".."])
@@ -75,6 +75,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][h
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="OF%ED%95%9C"])
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="OF%ED%95%9C"])
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="OF%ED%95%9C"])
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/하루.*공유/))
+www.youtube.com#?#ytd-comment-thread-renderer:has(#comment [id="author-text"]:contains(/하루.*공유/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/하루.*공유/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/하루.*공유/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[1lI].*9.*금/))
 www.youtube.com#?#ytd-comment-thread-renderer:has(#comment [id="author-text"]:contains(/[1lI].*9.*금/))
