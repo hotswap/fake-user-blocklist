@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202505172022
+! Version: 202505202007
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*=".."])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*=".."])
@@ -120,6 +120,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-
 www.youtube.com#?#ytd-comment-thread-renderer:has(#comment [id="author-text"]:contains(/딸.*(통.*령|슐.*랭)/))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/딸.*(통.*령|슐.*랭)/))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/딸.*(통.*령|슐.*랭)/))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/티.*슐.*랭/))
+www.youtube.com#?#ytd-comment-thread-renderer:has(#comment [id="author-text"]:contains(/티.*슐.*랭/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/티.*슐.*랭/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/티.*슐.*랭/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="19%EB%AA%A8%EC%9D%8C"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="19%EB%AA%A8%EC%9D%8C"])
