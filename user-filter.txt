@@ -4,52 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202506250725
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*=".."])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*=".."])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*=".."])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*=".."])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="__"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="__"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="__"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="__"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="--"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="--"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="--"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="--"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="_-"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="_-"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="_-"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="_-"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="-_"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="-_"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="-_"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="-_"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="._"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="._"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="._"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="._"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="_."])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="_."])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="_."])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="_."])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*=".-"])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*=".-"])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*=".-"])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*=".-"])
-
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="-."])
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="-."])
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href*="-."])
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href*="-."])
+! Version: 202506251833
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@19"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@19"])
@@ -170,6 +125,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/분.*수.*쇼/))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/분.*수.*쇼/))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/분.*수.*쇼/))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[._-]{3,}/))
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/[._-]{3,}/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/[._-]{3,}/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/[._-]{3,}/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href*="19%EB%AA%A8%EC%9D%8C"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href*="19%EB%AA%A8%EC%9D%8C"])
@@ -515,3 +475,8 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(쩌러)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(쩌러))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(쩌러))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(쩌러))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(UTTP)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(UTTP))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(UTTP))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(UTTP))
