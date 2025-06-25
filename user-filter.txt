@@ -4,7 +4,12 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202506251833
+! Version: 202506251838
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"][href^="/@UTTP"])
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"][href^="/@UTTP"])
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@19"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@19"])
