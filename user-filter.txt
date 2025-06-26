@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202506251838
+! Version: 202506261632
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
@@ -485,3 +485,9 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(UTTP)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(UTTP))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(UTTP))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(UTTP))
+
+! Filter for comments containing characters from the Unified Canadian Aboriginal Syllabics Extended block (U+1440 to U+147F)
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(/[\u1440-\u147f]/)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(/[\u1440-\u147f]/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(/[\u1440-\u147f]/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(/[\u1440-\u147f]/))
