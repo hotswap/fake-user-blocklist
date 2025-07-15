@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202507150845
+! Version: 202507151605
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
@@ -141,10 +141,10 @@ www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/온.*[팬펜퍤폔]/))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/온.*[팬펜퍤폔]/))
 
-www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/상.*단.*([채체챼쳬췌최].*[널녈]|[프푸퓨뿌쁘].*[사샤])/))
-www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/상.*단.*([채체챼쳬췌최].*[널녈]|[프푸퓨뿌쁘].*[사샤])/))
-m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/상.*단.*([채체챼쳬췌최].*[널녈]|[프푸퓨뿌쁘].*[사샤])/))
-m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/상.*단.*([채체챼쳬췌최].*[널녈]|[프푸퓨뿌쁘].*[사샤])/))
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[상샹].*[단댠].*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/[상샹].*[단댠].*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/[상샹].*[단댠].*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/[상샹].*[단댠].*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[._-]{3,}/))
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/[._-]{3,}/))
