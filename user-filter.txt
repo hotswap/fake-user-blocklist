@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202507220511
+! Version: 202507230438
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
@@ -490,6 +490,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(복원 구문)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(복원 구문))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(복원 구문))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(복원 구문))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(/USDT.*단어/)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(/USDT.*단어/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(/USDT.*단어/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(/USDT.*단어/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(시월모바일)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(시월모바일))
