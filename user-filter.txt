@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202507252048
+! Version: 202507271331
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
@@ -145,6 +145,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/([상샹].*[단댠]|위).*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/([상샹].*[단댠]|위).*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/([상샹].*[단댠]|위).*([채체챼쳬췌최].*[널녈눨]|[프푸퓨뿌쁘].*[사샤])/))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[대댸데뎨].*[출츌쭐쯀].*[무뮤문].*[의니늬]/))
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/[대댸데뎨].*[출츌쭐쯀].*[무뮤문].*[의니늬]/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> [class="comment-icon-container"] + button .comment-title:-abp-contains(/[대댸데뎨].*[출츌쭐쯀].*[무뮤문].*[의니늬]/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > [class="comment-icon-container"] + button .comment-title:-abp-contains(/[대댸데뎨].*[출츌쭐쯀].*[무뮤문].*[의니늬]/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"]:-abp-contains(/[._-]{3,}/))
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"]:-abp-contains(/[._-]{3,}/))
