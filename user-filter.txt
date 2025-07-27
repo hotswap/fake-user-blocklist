@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202507271331
+! Version: 202507271336
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
@@ -510,6 +510,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(쩌러)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(쩌러))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(쩌러))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(쩌러))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(/[<◀]\s*(눌러|클릭)/)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(/[<◀]\s*(눌러|클릭)/))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(/[<◀]\s*(눌러|클릭)/))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(/[<◀]\s*(눌러|클릭)/))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(UTTP)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(UTTP))
