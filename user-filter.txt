@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/hotswap/fake-user-blocklist
 ! Support: https://github.com/hotswap/fake-user-blocklist/issues
 ! License: https://github.com/hotswap/fake-user-blocklist/blob/main/LICENSE
-! Version: 202507271336
+! Version: 202508041836
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-has([id="author-text"][href^="/@UTTP"])
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment [id="author-text"][href^="/@UTTP"])
@@ -461,6 +461,11 @@ www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(�
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(바두기))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(바두기))
 
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(온카라)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(온카라))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(온카라))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(온카라))
+
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(유명걸그룹)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(유명걸그룹))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(유명걸그룹))
@@ -480,6 +485,11 @@ www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(GROK88K)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(GROK88K))
 m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(GROK88K))
 m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(GROK88K))
+
+www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(GROK30N)
+www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(GROK30N))
+m.youtube.com#?#ytm-comment-renderer:-abp-has(> .comment-content:-abp-contains(GROK30N))
+m.youtube.com#?#ytm-comment-thread-renderer:-abp-has(> ytm-comment-renderer > .comment-content:-abp-contains(GROK30N))
 
 www.youtube.com#?#ytd-comment-view-model[is-reply]:-abp-contains(복구 문구)
 www.youtube.com#?#ytd-comment-thread-renderer:-abp-has(#comment :-abp-contains(복구 문구))
